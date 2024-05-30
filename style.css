@@ -1,0 +1,113 @@
+body {
+    margin: 15px;
+}
+
+:root {
+    --time: .4s;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+}
+
+.card-front, .card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.card-back {
+    background-color: #e0a800;
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    margin: auto;
+    -webkit-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    -o-transition: all var(--time) ease-in-out;
+    -ms-transition: all var(--time) ease-in-out;
+    -moz-transition: all var(--time) ease-in-out;
+    -webkit-transition: all var(--time) ease-in-out;
+    transition: all var(--time) ease-in-out;
+}
+
+.card-front {
+    background-color: #ffc107;
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    margin: auto;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    -o-transition: all var(--time) ease-in-out;
+    -ms-transition: all var(--time) ease-in-out;
+    -moz-transition: all var(--time) ease-in-out;
+    -webkit-transition: all var(--time) ease-in-out;
+    transition: all var(--time) ease-in-out;
+}
+
+.flip .card-front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -moz-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+
+.flip .card-back {
+    z-index: 1000;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+
+form {
+    padding-bottom: 10px;
+}
+
+.button-container button {
+    margin: 10px;
+}
+
+small {
+    width: 200px;
+    margin: auto;
+    padding-left: 10px;
+}
+
+.red-shadow {
+    text-shadow: -1px 1px 15px #DC3545;
+}
+
+div p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.row-container {
+    /*   display: flex; */
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 600px) {
+    .row-container {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flashcard Maker</h1>
+    <div class="row-container">
+        <section class="row-1">
+            <div class="card-container" id="card">
+                <div class="card-front"></div>
+                <div class="card-back"></div>
+            </div>
+            <div class="button-container d-flex justify-content-center">
+                <button id="newCard" class="btn btn-primary">New Card</button>
+                <button id="viewAnswer" class="btn btn-primary">View Answer</button>
+            </div>
+        </section>
+        <section class="row-2">
+            <form action="">
+                <h2>Add a Card</h2>
+                <label for="addquestion">Question</label><br>
+                <input type="text" class="form-control" name="addquestion" id="addquestion"><br>
+                <label for="addanswer">Answer</label><br>
+                <input type="text" class="form-control" name="addanswer" id="addanswer"><br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <button class="btn btn-danger" id="deleteQuestions">Delete All Questions</button>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

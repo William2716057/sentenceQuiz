@@ -1,0 +1,3 @@
+C:\Users\wills\Desktop\Shortcuts\Files\Github\sentenceQuiz\sentenceQuiz\obj\Debug\sentenceQuiz.njsproj.AssemblyReference.cache
+C:\Users\wills\Desktop\Shortcuts\Files\Github\sentenceQuiz\sentenceQuiz\obj\Debug\sentenceQuiz.njsproj.CoreCompileInputs.cache
+C:\Users\wills\Desktop\Shortcuts\Files\Github\sentenceQuiz\sentenceQuiz\bin\Microsoft.NodejsTools.WebRole.dll
