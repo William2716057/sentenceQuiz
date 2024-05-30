@@ -4,6 +4,7 @@ var answer;
 var ranQuestion;
 var ranNum;
 var ranAnswer;
+var language = 'en-US';  // Default language
 
 if (storedQuestions == null) {
     var questions = [];
@@ -60,7 +61,19 @@ $("#newCard").on("click", function () {
 function speakAnswer(text) {
     var synth = window.speechSynthesis;
     var utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = language;  // Set the language
     synth.speak(utterance);
 }
+
+function setLanguage(lang) {
+    language = lang;
+}
+
+$("#language").on("change", function () {
+    setLanguage($(this).val());
+});
+
+// Example: Change language to Spanish
+// setLanguage('es-ES');
 
 MathJax.Hub.Queue(["Rerender", MathJax.Hub, this]);
